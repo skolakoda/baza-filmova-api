@@ -7,8 +7,8 @@ const WebSocket = require('ws')
 const filmovi = require('./rute/filmovi')
 const dodajFilm = require('./rute/dodaj-film')
 const obrisiFilm = require('./rute/obrisi-film')
+const {port, domain} = require('./config/host')
 
-const port = process.env.PORT || 5000
 const app = express()
 const server = http.createServer(app)
 const wss = new WebSocket.Server({server})
@@ -16,8 +16,8 @@ const wss = new WebSocket.Server({server})
 /* CONFIG */
 
 app.use(cors())
-app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: false}))
 
 /* RUTE */
 
@@ -31,4 +31,4 @@ app.get('/obrisi-film/:id', obrisiFilm)
 
 /* SERVER */
 
-server.listen(port, () => console.log('Server sluzi na kapiji', port))
+server.listen(port, () => console.log(`Server sluzi na ${domain}`))

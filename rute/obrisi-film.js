@@ -1,5 +1,5 @@
 const mongodb = require('mongodb')
-const mongoUri = 'mongodb://filmovi:filmovi@ds243285.mlab.com:43285/heroku_sljlvq37'
+const {mongoUri} = require('../config/db')
 
 const obrisiFilm = (req, res) => {
   mongodb.MongoClient.connect(mongoUri, (err, db) => {

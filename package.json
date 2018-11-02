@@ -1,17 +1,11 @@
 {
-  "name": "baza-filmova",
+  "name": "baza-filmova-api",
   "version": "1.0.0",
-  "description": "Idemo lagano",
+  "description": "Backend API za bazu filmova Škole koda",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
-  "keywords": [
-    "node",
-    "heroku"
-  ],
   "author": "Damjan Pavlica <mudroljub@gmail.com>",
   "license": "ISC",
   "dependencies": {
@@ -20,6 +14,9 @@
     "express": "^4.16.2",
     "mongodb": "^2.2.33",
     "ws": "^3.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
   },
   "engines": {
     "node": "6.9.3"
