@@ -27,7 +27,7 @@ app.get('/filmovi/', filmovi)
 
 app.post('/dodaj-film/', (req, res) => dodajFilm(req, res, wss))
 
-app.get('/obrisi-film/:id', obrisiFilm)
+app.delete('/obrisi-film/', obrisiFilm)
 
 /* SERVER */
 
