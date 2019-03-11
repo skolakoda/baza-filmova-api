@@ -6,6 +6,9 @@ Backend API za bazu filmova Škole koda.
 https://baza-filmova.herokuapp.com/filmovi/ 
 (GET zahtev bez parametara)
 
+https://baza-filmova.herokuapp.com/pokazi-film/5be9da410f0a326f85bd120f
+(GET zahtev sa id parametarom)
+
 https://baza-filmova.herokuapp.com/dodaj-film/  
 (POST zahtev sa parametrima: naziv, godina, slika (obavezno) i comments (opciono))
 
