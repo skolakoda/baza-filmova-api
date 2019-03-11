@@ -7,6 +7,7 @@ const WebSocket = require('ws')
 const filmovi = require('./rute/filmovi')
 const dodajFilm = require('./rute/dodaj-film')
 const obrisiFilm = require('./rute/obrisi-film')
+const pokaziFilm = require('./rute/pokazi-film')
 const {port, domain} = require('./config/host')
 
 const app = express()
@@ -28,6 +29,8 @@ app.get('/filmovi/', filmovi)
 app.post('/dodaj-film/', (req, res) => dodajFilm(req, res, wss))
 
 app.delete('/obrisi-film/', obrisiFilm)
+
+app.get('/pokazi-film/:id', pokaziFilm)
 
 /* SERVER */
 
