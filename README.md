@@ -19,7 +19,7 @@ https://baza-filmova.herokuapp.com/obrisi-film/
 ## Prerequisites
 
 - Intall Node.js
-- Set `FILMOVI_DB_URL` environment variables (MongoDB URL)
+- Set `FILMOVI_DB_URL` environment variable (MongoDB URL)
 
 ## Start
 
