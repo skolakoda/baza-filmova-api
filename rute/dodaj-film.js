@@ -3,15 +3,17 @@ const {mongoUri} = require('../config/db')
 const WebSocket = require('ws')
 
 const dodajFilm = (req, res, wss) => {
-  const {naziv, godina, slika} = req.body
-  if (!naziv || !Number(godina) || !slika) return res.send('Niste poslali sva polja.')
+  let {naziv, godina, slika} = req.body
+  naziv = naziv.trim()
+  godina = Number(godina)
+  if (!naziv || !godina || !slika) return res.send('Niste poslali sva polja.')
 
   mongodb.MongoClient.connect(mongoUri, (err, db) => {
     if(err) throw err
     db.collection('filmovi').update(
       {naziv},
       {$set: {
-        godina: Number(godina),
+        godina,
         slika
       }},
       {upsert: true}
