@@ -9,6 +9,7 @@ const filmovi = require('./rute/filmovi')
 const dodajFilm = require('./rute/dodaj-film')
 const obrisiFilm = require('./rute/obrisi-film')
 const pokaziFilm = require('./rute/pokazi-film')
+const urediFilm = require('./rute/uredi-film')
 const {port, domain} = require('./config/host')
 
 const app = express()
@@ -27,11 +28,13 @@ app.get('/', (req, res) => res.send('Baza podataka u izgradnji.'))
 
 app.get('/filmovi/', filmovi)
 
+app.get('/pokazi-film/:id', pokaziFilm)
+
 app.post('/dodaj-film/', (req, res) => dodajFilm(req, res, wss))
 
-app.delete('/obrisi-film/', obrisiFilm)
+app.put('/uredi-film/', urediFilm)
 
-app.get('/pokazi-film/:id', pokaziFilm)
+app.delete('/obrisi-film/', obrisiFilm)
 
 /* SERVER */
 

@@ -3,7 +3,7 @@ const {mongoUri} = require('../config/db')
 
 const pokaziFilm = (req, res) => {
   mongodb.MongoClient.connect(mongoUri, (err, db) => {
-    db.collection('filmovi').findOne({'_id': new mongodb.ObjectID(req.params.id)}, (err, item) => {
+    db.collection('filmovi').findOne({'_id': mongodb.ObjectID(req.params.id)}, (err, item) => {
       if (err) console.log(err)
       res.send(item)
     })
