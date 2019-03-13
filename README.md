@@ -24,6 +24,8 @@ https://baza-filmova.herokuapp.com/obrisi-film/
 - Intall Node.js
 - Set `FILMOVI_DB_URL` environment variable (MongoDB URL)
 
+(mozete napraviti lokalnu MongoDB sa podacima iz `data/backup.json`) 
+
 ## Start
 
 ```
