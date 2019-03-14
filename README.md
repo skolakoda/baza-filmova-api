@@ -3,7 +3,7 @@
 Backend API za bazu filmova Škole koda.
 
 ```
-https://baza-filmova.herokuapp.com/filmovi/ 
+https://baza-filmova.herokuapp.com/filmovi/
 (GET zahtev bez parametara)
 
 https://baza-filmova.herokuapp.com/pokazi-film/5be9da410f0a326f85bd120f
@@ -24,7 +24,7 @@ https://baza-filmova.herokuapp.com/obrisi-film/
 - Intall Node.js
 - Set `FILMOVI_DB_URL` environment variable (MongoDB URL)
 
-(mozete napraviti lokalnu MongoDB sa podacima iz `data/backup.json`) 
+(mozete napraviti lokalnu MongoDB sa podacima iz `data/backup.json`)
 
 ## Start
 
@@ -35,4 +35,8 @@ npm start
 
 ## Deploy
 
-Deploy will be done automatically after merge into master branch. 
+Deploy will be done automatically after merge into master branch.
+
+## TODO
+
+- napraviti rutu dodaj-komentar
