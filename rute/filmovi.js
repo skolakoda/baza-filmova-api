@@ -6,7 +6,7 @@ const filmovi = (req, res) => {
     if (err) throw err
     db.collection('filmovi')
       .find()
-      .sort({godina: 1}) // ili padajuce -1
+      // .sort({godina: 1}) // ili padajuce -1
       .toArray((err, podaci) => res.send(podaci))
   })
 }
