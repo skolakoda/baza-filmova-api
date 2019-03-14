@@ -1,7 +1,7 @@
 const mongodb = require('mongodb')
 const {mongoUri} = require('../config/db')
 
-const urediFilm = (req, res, wss) => {
+const urediFilm = (req, res) => {
   let {naziv, godina, slika} = req.body
   naziv = naziv.trim()
   godina = Number(godina)
