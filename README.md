@@ -4,7 +4,7 @@ Backend API za bazu filmova Škole koda.
 
 **Važna napomena**: *kada testirate nemojte dodavati smeće u bazu (tipa test, 1234, aaa), šaljite prave filmove.*
 
-## Documentation
+## Dokumentacija
 
 ```
 https://baza-filmova.herokuapp.com/filmovi/
@@ -23,16 +23,16 @@ https://baza-filmova.herokuapp.com/obrisi-film/
 (DELETE zahtev, obavezan parametar id)
 ```
 
-## Development
+## Razvoj
 
-### Prerequisites
+### Preduslovi
 
 - Intall Node.js
 - Set `FILMOVI_DB_URL` environment variable (MongoDB URL)
 
 (mozete napraviti lokalnu MongoDB sa podacima iz `data/backup.json`)
 
-### Start
+### Pokretanje
 
 ```
 npm i
