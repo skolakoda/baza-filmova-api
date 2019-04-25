@@ -1,6 +1,8 @@
 # Baza filmova API
 
-Backend API za bazu filmova Škole koda.
+Backend API za bazu filmova Škole koda. 
+
+**Važna napomena**: kada testirate nemojte dodavati smeće u bazu (tipa test, 1234, aaa), šaljite prave filmove.
 
 ## Documentation
 
