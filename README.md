@@ -2,6 +2,8 @@
 
 Backend API za bazu filmova Škole koda.
 
+## Documentation
+
 ```
 https://baza-filmova.herokuapp.com/filmovi/
 (GET zahtev bez parametara)
@@ -19,21 +21,23 @@ https://baza-filmova.herokuapp.com/obrisi-film/
 (DELETE zahtev, obavezan parametar id)
 ```
 
-## Prerequisites
+## Development
+
+### Prerequisites
 
 - Intall Node.js
 - Set `FILMOVI_DB_URL` environment variable (MongoDB URL)
 
 (mozete napraviti lokalnu MongoDB sa podacima iz `data/backup.json`)
 
-## Start
+### Start
 
 ```
 npm i
 npm start
 ```
 
-## Deploy
+### Deploy
 
 Deploy will be done automatically after merge into master branch.
 
