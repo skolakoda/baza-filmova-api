@@ -45,4 +45,4 @@ Deploy will be done automatically after merge into master branch.
 
 ## TODO
 
-- [] napraviti rutu dodaj-komentar
+-[] napraviti rutu dodaj-komentar
